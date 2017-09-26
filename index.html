@@ -1,3 +1,152 @@
 <html>
-hi
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <head>
+        <title>KPFrenchKeys</title>
+    </head>
+
+    <style>
+        h1, h2, h3, h4, h5, h6, p, a, li, button{
+            font-family : 'Raleway', sans-serif;
+        }
+
+        .navbar {
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+        }
+
+        .bottombar {
+            position: fixed; /* Set the navbar to fixed position */
+            bottom: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+        }
+
+        .content {
+            margin-top : 100px
+        }
+
+        .w3-eigen{color:#fff!important;background-color:#16161d!important}
+    </style>
+
+    <body>
+
+        <!--Header section-->
+        <div class="w3-container w3-eigen navbar">
+            <div class="w3-panel w3-animate-opacity">
+                <button class="w3-button w3-hover-white w3-xlarge" style="text-align:left; float: left" onclick="w3_open()">☰</button>
+                <center><h1>KPFrenchKeys</h1></center>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none" id="mySidebar">
+            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+            <a a href="KPFrenchKeysInstaller.EXE" download class="w3-bar-item w3-button">Quick Download</a>
+            <a href="mailto:kashpartyofficial@gmail.com?Subject=Customer%20E-mail" target="_top" class="w3-bar-item w3-button">Contact Us</a>
+            <a href="https://kashparty.github.io/" class="w3-bar-item w3-button">KashParty Website</a>
+        </div>
+
+        <script>
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+
+
+        <!--Main section-->
+        <div class="w3-panel content" style="margin-bottom: 60px">
+            
+            <div class="w3-card w3-panel w3-indigo w3-third">
+                <center><h2>Make writing easier.</h2></center>
+                <p>
+                    Seamlessly add any French special characters to your text. No more clicking the "Symbols" tab on Word.
+                </p>
+            </div>   
+
+            <div class="w3-panel w3-white w3-third">
+                <center><h2>Minimalistic.</h2></center>
+                <p>
+                    No annoyances or clutterd layout. Only what you need, where you need it.
+                </p>
+            </div>
+
+            <div class="w3-panel w3-red w3-card w3-third">
+                <center><h2>Fast and simple.</h2></center>
+                <p>
+                    Instant startup and intuitive, seamless workflow. Type wherever, whenever.
+                </p>
+            </div>
+            
+            <div class="w3-card w3-panel w3-white">
+                <div class = "w3-panel w3-white w3-third">
+                    <center><h2>Features</h2></center>
+                    <ul class="w3-ul">
+                        <li>Instant startup time</li>
+                        <li>Works with <strong>any</strong> application</li>
+                        <li>Beautiful and simple design</li>
+                        <li>Supports all French special characters</li>
+                        <li>Absolutely free!</li>
+                    </ul>
+                </div>
+
+                <div class="w3-row-padding w3-twothird">
+                    <center><h2>Screenshots</h2></center>
+                    <div class="w3-container w3-third">
+                        <img src="WordScreenShot.png" style="width:100%;cursor:pointer" 
+                        onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    <div class="w3-containe w3-third">
+                        <img src="GoogleTranslateScreenShot.png" style="width:100%;cursor:pointer" 
+                        onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    <div class="w3-container w3-third">
+                        <img src="ChromeScreenShot.png" style="width:100%;cursor:pointer" 
+                        onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                    </div>
+
+                    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img id="img01" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-container w3-panel w3-white">
+                <center>
+                    <h2>Download now for Windows</h2>
+                    <p>Windows installer: <a href="KPFrenchKeysInstaller.EXE" download>Free Download</a></p>
+            </div>
+
+            <div class="bottombar">
+                <div class="w3-third">
+                    <p>   </p>
+                </div>
+
+                <div class="w3-card-4 w3-round-xxlarge w3-eigen w3-third w3-animate-fading">
+                    <p style="text-align:center">KPFrenchKeys by <a href="https://kashparty.github.io/">KashParty</a>.</p>
+                </div>
+
+                <div class="w3-third">
+                    <p>   </p>
+                </div> 
+
+                <div class="w3-panel">
+                    <p>   </p>
+                </div>  
+            </div>          
+
+            <script>
+                function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                }
+            </script>
+        </div>
+    </body>
 </html>
